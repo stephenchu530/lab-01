@@ -1,22 +1,19 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   body {
     width: 480px;
   }
 
-  #a, #b, #c, #d, #i {
-    width: 480px;
-  }
-
-  #a {
-    height: 74px;
+  header {
+    height: 75px;
     line-height: 75px;
-    background-color: #ffffff;
+    border-top: 1px solid black;
+    background-color: #fff;
   }
 
-  #b {
+  aside {
     height: 150px;
     line-height: 150px;
-    background-color: #eeeeee;
+    background-color: #eee;
   }
 
   #c, #d {
@@ -25,118 +22,124 @@
   }
 
   #c {
-    background-color: #dddddd;
+    background-color: #ddd;
   }
 
   #d {
-    background-color: #cccccc;
+    background-color: #ccc;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #e, #f, #g, #h {
     width: 240px;
     height: 250px;
-    float: left;
     line-height: 250px;
+    flex: 1 0;
   }
 
   #e {
-    background-color: #bbbbbb;
+    background-color: #bbb;
   }
 
   #f {
-    background-color: #aaaaaa;
+    background-color: #aaa;
   }
 
   #g {
-    background-color: #999999;
+    background-color: #999;
   }
 
   #h {
-    background-color: #888888;
+    background-color: #888;
   }
 
-  #i {
-    clear: both;
-    height: 79px;
+  footer {
+    height: 80px;
     line-height: 80px;
-    background-color: #777777;
-  }
-  section::after {
-    content: "";
-    clear: both;
-    display: table;
+    border-bottom: 1px solid black;
+    background-color: #777;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 721px) and (max-width: 960px) {
   body {
-    width: 960px;
+    width: 720px;
   }
 
-  #b, #c, #d, #d, #e, #f, #g, #h, #i, #articles {
-    float: left;
+  header {
+    height: 87px;
+    line-height: 87px;
+    background-color: #fff000;
+    border-top: 1px solid black;
   }
 
-  #a {
-    width: 960px;
-    height: 100px;
-    line-height: 100px;
-    background-color: #ff0000;
+  main {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  #b {
-    width: 200px;
-    height: 600px;
-    line-height: 600px;
-    background-color: #ee0000;
+  aside {
+    width: 720px;
+    height: 150px;
+    line-height: 150px;
+    background-color: #eee000;
   }
 
   #c, #d {
-    width: 380px;
-    height: 200px;
-    line-height: 200px;
+    width: 360px;
+    height: 100px;
+    line-height: 100px;
   }
 
   #c {
-    background-color: #dd0000;
+    background-color: #ddd000;
   }
 
   #d {
-    background-color: #cc0000;
+    background-color: #ccc000;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #e, #f, #g, #h {
-    width: 190px;
+    width: 180px;
     height: 250px;
     line-height: 250px;
   }
 
   #e {
-    background-color: #bb0000;
+    background-color: #bbb000;
   }
 
   #f {
-    background-color: #aa0000;
+    background-color: #aaa000;
   }
 
   #g {
-    background-color: #990000;
+    background-color: #999000;
   }
 
   #h {
-    background-color: #880000;
+    background-color: #888000;
   }
 
-  #i {
-    width: 760px;
-    height: 150px;
-    line-height: 150px;
-    background-color: #770000;
+  footer {
+    height: 115px;
+    line-height: 115px;
+    background-color: #777000
   }
+}
 
-  #articles::after {
-    content: "";
-    clear: both;
-    display: table;
+
+@media screen and (min-width: 961px) and (max-width: 1880px) {
+  body {
+    width: 960px;
   }
 }
